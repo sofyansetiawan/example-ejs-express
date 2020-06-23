@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Sejarah Dunia",
+    "type": "buku",
+    "weight": "42",
+    "input": "2017-03-01",
+    "qty": "20"
+  },
+  {
+    "id": "2",
+    "name": "Asus GOR",
+    "type": "komputer",
+    "weight": "5",
+    "input": "2019-04-28",
+    "qty": "10"
+  },
+  {
+    "id": 3,
+    "name": "Meja",
+    "type": "inventory",
+    "weight": 20,
+    "input": "2020-05-02",
+    "qty": 10
+  },
+  {
+    "id": 4,
+    "name": "Mesin Ketik",
+    "type": "inventory",
+    "weight": "50",
+    "input": "2019-05-01",
+    "qty": "3"
+  },
+  {
+    "id": 5,
+    "name": "MUMUMU",
+    "type": "inventory",
+    "weight": "20",
+    "input": "2020-06-24",
+    "qty": "20"
+  }
+]

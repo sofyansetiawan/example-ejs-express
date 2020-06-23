@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Products</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <h1>Edit Product</h1>
+    <p>Product id: <%= filterDataById[0].id %></p>
+
+    <div id="container">
+
+    </div>
+    <form action="/edit" method="POST">
+        <input type="hidden" value="<%= filterDataById[0].id %>" name="editId">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="<%= filterDataById[0].name %>"><br><br>
+
+        <label for="type1">Type:</label><br>
+        <input type="radio" id="type1" name="type" value="buku" <% if(filterDataById[0].type === "buku") { %> checked
+            <% } %>> Buku<br>
+        <input type="radio" id="type2" name="type" value="komputer" <% if(filterDataById[0].type === "komputer") { %>
+            checked <% } %>> Komputer<br>
+        <input type="radio" id="type3" name="type" value="inventory" <% if(filterDataById[0].type === "inventory") { %>
+            checked <% } %>> Inventory<br>
+        <br>
+
+        <label for="weight">Weight:</label><br>
+        <input type="number" id="weight" name="weight" value="<%= filterDataById[0].weight %>"><br><br>
+
+        <label for="input">Input:</label><br>
+        <input type="date" id="input" name="input" value="<%= filterDataById[0].input %>"><br><br>
+
+        <label for="qty">Qty:</label><br>
+        <input type="number" id="qty" name="qty" value="<%= filterDataById[0].qty %>"><br><br>
+
+        <input type="submit" value="Add Product">
+    </form>
+
+</body>
+
+</html>

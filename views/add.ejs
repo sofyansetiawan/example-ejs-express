@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Products</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <h1>Add Product</h1>
+
+    <div id="container">
+        
+    </div><form action="/add" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value=""><br><br>
+        <label for="type1">Type:</label><br>
+        <input type="radio" id="type1" name="type" value="buku"> Buku<br>
+        <input type="radio" id="type2" name="type" value="komputer"> Komputer<br>
+        <input type="radio" id="type3" name="type" value="inventory"> Inventory<br>
+        <br>
+        <label for="weight">Weight:</label><br>
+        <input type="number" id="weight" name="weight"><br><br>
+        <label for="input">Input:</label><br>
+        <input type="date" id="input" name="input"><br><br>
+        <label for="qty">Qty:</label><br>
+        <input type="number" id="qty" name="qty"><br><br>
+        
+        <input type="submit" value="Add Product">
+      </form>
+
+</body>
+
+</html>
